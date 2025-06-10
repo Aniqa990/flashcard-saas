@@ -18,7 +18,6 @@ export default function Flashcard() {
 
   useEffect(() => {
     async function getFlashcards() {
-      const { isLoaded, isSignedIn, user } = useUser();
 if (!isLoaded || !isSignedIn) {
   console.error("User is not signed in or not loaded.");
   return;
